@@ -1,0 +1,3580 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: cmd.exe /d /c lein update-in :dependencies conj [nrepl,"0.8.3"] -- update-in :plugins conj [cider/cider-nrepl,"0.25.8"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉checklist.web꞉> 
+; Jack-in done.
+clj꞉checklist.web꞉> 
+; Evaluating file: web.clj
+; Syntax error compiling def at (C:\Users\Georg H. Ekeberg\TelePlan Nora\checklist\src\checklist\web.clj:26:1).
+; Too many arguments to def
+; Evaluation of file web.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉checklist.web꞉> 
+clj꞉checklist.web꞉> 
+; Evaluating file: web.clj
+#'checklist.web/server
+clj꞉checklist.web꞉> 
+#'checklist.web/db-conn
+clj꞉checklist.web꞉> 
+#'checklist.web/conn
+clj꞉checklist.web꞉> 
+#'checklist.web/db
+clj꞉checklist.web꞉> 
+; Execution error (ArityException) at checklist.web/eval12786 (form-init8739668780468483625.clj:25).
+; Wrong number of args (1) passed to: monger.collection/find
+clj꞉checklist.web꞉> 
+#object[com.mongodb.DBCursor 0x7a5db1e0 "DBCursor{collection=DBCollection{database=DB{name='test'}, name='speedcameras'}, find=com.mongodb.client.model.DBCollectionFindOptions@59de0a21}"]
+clj꞉checklist.web꞉> 
+({:_id #object[org.bson.types.ObjectId 0x381eb911 "604a28e1bd01373dd82aa303"]
+  :type "FeatureCollection"
+  :features
+  [{:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/0329002_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=297634"
+     :locked true
+     :label {:text "Aker sykehus"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=297634'>"}
+    :id "297634"
+    :geometry {:type "Point", :coordinates [10.798009 59.941025]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Aksdal"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=186425"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=186425'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "186425"
+    :geometry {:type "Point", :coordinates [5.448602 59.418026]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Alsåkernes"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=110730"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110730'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "110730"
+    :geometry {:type "Point", :coordinates [6.078816 59.76755]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Ambjørndalen"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=127268"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=127268'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "127268"
+    :geometry {:type "Point", :coordinates [8.586191 59.587364]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1129037_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=1000402"
+     :locked true
+     :label {:text "Arsvågen ferjekai 1"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1000402'>"}
+    :id "1000402"
+    :geometry {:type "Point", :coordinates [5.450075 59.171135]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1129037_2/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=1000404"
+     :locked true
+     :label {:text "Arsvågen ferjekai 2"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1000404'>"}
+    :id "1000404"
+    :geometry {:type "Point", :coordinates [5.45023 59.170853]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/0229032_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=387688"
+     :locked true
+     :label {:text "Asker"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=387688'>"}
+    :id "387688"
+    :geometry {:type "Point", :coordinates [10.43968 59.832977]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/0729001_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=592092"
+     :locked true
+     :label {:text "Berg kirke"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=592092'>"}
+    :id "592092"
+    :geometry {:type "Point", :coordinates [9.923152 58.99282]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/0729015_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=576514"
+     :locked true
+     :label {:text "Bogen"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=576514'>"}
+    :id "576514"
+    :geometry {:type "Point", :coordinates [10.264292 59.53098]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Bremnes"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=197154"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=197154'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "197154"
+    :geometry {:type "Point", :coordinates [5.186835 59.797047]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Brumyrdal"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=110597"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110597'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "110597"
+    :geometry {:type "Point", :coordinates [9.507642 59.12548]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Brunkeberg"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=127262"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=127262'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "127262"
+    :geometry {:type "Point", :coordinates [8.503613 59.442493]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Budal"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=1069256"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1069256'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "1069256"
+    :geometry {:type "Point", :coordinates [10.384978 59.125206]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Buekrossen 1"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=214243"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=214243'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "214243"
+    :geometry {:type "Point", :coordinates [5.987441 58.66651]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Buekrossen 2"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=110737"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110737'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "110737"
+    :geometry {:type "Point", :coordinates [5.987442 58.66651]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Byrkja"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=581055"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=581055'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "581055"
+    :geometry {:type "Point", :coordinates [6.146584 59.186398]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1229028_2/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=746237"
+     :locked true
+     :label {:text "Bømlabrua 1"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=746237'>"}
+    :id "746237"
+    :geometry {:type "Point", :coordinates [5.380622 59.737354]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Bømlabrua 2"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=745104"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=745104'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "745104"
+    :geometry {:type "Point", :coordinates [5.377826 59.73717]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Dalehefte"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=458596"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=458596'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "458596"
+    :geometry {:type "Point", :coordinates [7.81254 58.308594]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Darbu"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=1107725"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1107725'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "1107725"
+    :geometry {:type "Point", :coordinates [9.777227 59.70239]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Dirdal"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=320854"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=320854'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "320854"
+    :geometry {:type "Point", :coordinates [6.243109 58.80774]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/0229018_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=804808"
+     :locked true
+     :label {:text "Djupdalen"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=804808'>"}
+    :id "804808"
+    :geometry {:type "Point", :coordinates [10.974694 59.96223]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Drangsdalen"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=112521"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=112521'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "112521"
+    :geometry {:type "Point", :coordinates [6.406439 58.47262]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Eiane"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=559813"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=559813'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "559813"
+    :geometry {:type "Point", :coordinates [6.292859 59.29422]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Eikje"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=186437"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=186437'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "186437"
+    :geometry {:type "Point", :coordinates [5.48923 59.2955]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Farsjø"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=110583"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110583'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "110583"
+    :geometry {:type "Point", :coordinates [9.332315 58.939854]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1129015_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=285084"
+     :locked true
+     :label {:text "Ferkingstad"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=285084'>"}
+    :id "285084"
+    :geometry {:type "Point", :coordinates [5.183687 59.189487]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Fidjane"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=458586"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=458586'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "458586"
+    :geometry {:type "Point", :coordinates [7.939789 58.14116]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1129003_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=444672"
+     :locked true
+     :label {:text "Finnestad"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=444672'>"}
+    :id "444672"
+    :geometry {:type "Point", :coordinates [5.654466 58.990803]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1129038_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=1214051"
+     :locked true
+     :label {:text "Fiskepiren"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1214051'>"}
+    :id "1214051"
+    :geometry {:type "Point", :coordinates [5.739854 58.971916]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/0329007_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=329272"
+     :locked true
+     :label {:text "Fiskvollbukta"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=329272'>"}
+    :id "329272"
+    :geometry {:type "Point", :coordinates [10.775894 59.84214]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Fjærekilen"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=110580"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110580'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "110580"
+    :geometry {:type "Point", :coordinates [9.540253 59.18545]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Fokserød"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=111712"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=111712'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "111712"
+    :geometry {:type "Point", :coordinates [10.208213 59.183083]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1129024_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=178258"
+     :locked true
+     :label {:text "Forus 1"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=178258'>"}
+    :id "178258"
+    :geometry {:type "Point", :coordinates [5.718393 58.884556]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1129024_2/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=280552"
+     :locked true
+     :label {:text "Forus 2"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=280552'>"}
+    :id "280552"
+    :geometry {:type "Point", :coordinates [5.718395 58.884556]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Forusbeen, mot Sandnes"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=161301"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=161301'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "161301"
+    :geometry {:type "Point", :coordinates [5.711781 58.894547]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Forusbeen, mot Stavanger"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=161086"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=161086'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "161086"
+    :geometry {:type "Point", :coordinates [5.711741 58.894653]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Furuset"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=513151"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=513151'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "513151"
+    :geometry {:type "Point", :coordinates [10.890513 59.9376]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Gautestad "}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=109800"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=109800'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "109800"
+    :geometry {:type "Point", :coordinates [11.302859 59.376114]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/0229005_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=659547"
+     :locked true
+     :label {:text "Gjelleråsen"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=659547'>"}
+    :id "659547"
+    :geometry {:type "Point", :coordinates [10.928709 59.986526]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/0729005_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=289642"
+     :locked true
+     :label {:text "Gravdal"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=289642'>"}
+    :id "289642"
+    :geometry {:type "Point", :coordinates [10.197373 59.30377]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Grønnliheia"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=1069329"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1069329'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "1069329"
+    :geometry {:type "Point", :coordinates [8.108081 59.531517]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Gulli nord"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=209649"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=209649'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "209649"
+    :geometry {:type "Point", :coordinates [10.37472 59.318283]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1029007_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=110611"
+     :locked true
+     :label {:text "Haddelandsheia"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110611'>"}
+    :id "110611"
+    :geometry {:type "Point", :coordinates [7.078181 58.504597]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Hamrebakkene"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=559854"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=559854'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "559854"
+    :geometry {:type "Point", :coordinates [6.581453 58.445244]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Hanekleiva"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=209309"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=209309'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "209309"
+    :geometry {:type "Point", :coordinates [10.181025 59.57334]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Harestad 1"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=627517"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=627517'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "627517"
+    :geometry {:type "Point", :coordinates [5.635306 59.012638]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1129027_2/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=627515"
+     :locked true
+     :label {:text "Harestad 2"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=627515'>"}
+    :id "627515"
+    :geometry {:type "Point", :coordinates [5.636789 59.012756]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Haslestad"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=567756"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=567756'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "567756"
+    :geometry {:type "Point", :coordinates [8.841694 58.574017]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Haukelifjell"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=127264"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=127264'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "127264"
+    :geometry {:type "Point", :coordinates [7.088133 59.85024]}}
+   ...]
+  :properties {}})
+clj꞉checklist.web꞉> 
+nil
+clj꞉checklist.web꞉> 
+nil
+clj꞉checklist.web꞉> 
+({:_id #object[org.bson.types.ObjectId 0x30a029c2 "604a28e1bd01373dd82aa303"]
+  :type "FeatureCollection"
+  :features
+  [{:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/0329002_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=297634"
+     :locked true
+     :label {:text "Aker sykehus"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=297634'>"}
+    :id "297634"
+    :geometry {:type "Point", :coordinates [10.798009 59.941025]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Aksdal"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=186425"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=186425'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "186425"
+    :geometry {:type "Point", :coordinates [5.448602 59.418026]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Alsåkernes"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=110730"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110730'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "110730"
+    :geometry {:type "Point", :coordinates [6.078816 59.76755]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Ambjørndalen"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=127268"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=127268'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "127268"
+    :geometry {:type "Point", :coordinates [8.586191 59.587364]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1129037_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=1000402"
+     :locked true
+     :label {:text "Arsvågen ferjekai 1"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1000402'>"}
+    :id "1000402"
+    :geometry {:type "Point", :coordinates [5.450075 59.171135]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1129037_2/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=1000404"
+     :locked true
+     :label {:text "Arsvågen ferjekai 2"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1000404'>"}
+    :id "1000404"
+    :geometry {:type "Point", :coordinates [5.45023 59.170853]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/0229032_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=387688"
+     :locked true
+     :label {:text "Asker"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=387688'>"}
+    :id "387688"
+    :geometry {:type "Point", :coordinates [10.43968 59.832977]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/0729001_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=592092"
+     :locked true
+     :label {:text "Berg kirke"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=592092'>"}
+    :id "592092"
+    :geometry {:type "Point", :coordinates [9.923152 58.99282]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/0729015_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=576514"
+     :locked true
+     :label {:text "Bogen"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=576514'>"}
+    :id "576514"
+    :geometry {:type "Point", :coordinates [10.264292 59.53098]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Bremnes"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=197154"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=197154'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "197154"
+    :geometry {:type "Point", :coordinates [5.186835 59.797047]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Brumyrdal"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=110597"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110597'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "110597"
+    :geometry {:type "Point", :coordinates [9.507642 59.12548]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Brunkeberg"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=127262"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=127262'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "127262"
+    :geometry {:type "Point", :coordinates [8.503613 59.442493]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Budal"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=1069256"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1069256'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "1069256"
+    :geometry {:type "Point", :coordinates [10.384978 59.125206]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Buekrossen 1"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=214243"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=214243'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "214243"
+    :geometry {:type "Point", :coordinates [5.987441 58.66651]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Buekrossen 2"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=110737"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110737'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "110737"
+    :geometry {:type "Point", :coordinates [5.987442 58.66651]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Byrkja"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=581055"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=581055'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "581055"
+    :geometry {:type "Point", :coordinates [6.146584 59.186398]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1229028_2/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=746237"
+     :locked true
+     :label {:text "Bømlabrua 1"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=746237'>"}
+    :id "746237"
+    :geometry {:type "Point", :coordinates [5.380622 59.737354]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Bømlabrua 2"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=745104"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=745104'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "745104"
+    :geometry {:type "Point", :coordinates [5.377826 59.73717]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Dalehefte"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=458596"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=458596'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "458596"
+    :geometry {:type "Point", :coordinates [7.81254 58.308594]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Darbu"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=1107725"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1107725'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "1107725"
+    :geometry {:type "Point", :coordinates [9.777227 59.70239]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Dirdal"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=320854"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=320854'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "320854"
+    :geometry {:type "Point", :coordinates [6.243109 58.80774]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/0229018_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=804808"
+     :locked true
+     :label {:text "Djupdalen"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=804808'>"}
+    :id "804808"
+    :geometry {:type "Point", :coordinates [10.974694 59.96223]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Drangsdalen"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=112521"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=112521'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "112521"
+    :geometry {:type "Point", :coordinates [6.406439 58.47262]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Eiane"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=559813"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=559813'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "559813"
+    :geometry {:type "Point", :coordinates [6.292859 59.29422]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Eikje"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=186437"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=186437'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "186437"
+    :geometry {:type "Point", :coordinates [5.48923 59.2955]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Farsjø"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=110583"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110583'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "110583"
+    :geometry {:type "Point", :coordinates [9.332315 58.939854]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1129015_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=285084"
+     :locked true
+     :label {:text "Ferkingstad"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=285084'>"}
+    :id "285084"
+    :geometry {:type "Point", :coordinates [5.183687 59.189487]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Fidjane"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=458586"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=458586'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "458586"
+    :geometry {:type "Point", :coordinates [7.939789 58.14116]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1129003_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=444672"
+     :locked true
+     :label {:text "Finnestad"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=444672'>"}
+    :id "444672"
+    :geometry {:type "Point", :coordinates [5.654466 58.990803]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1129038_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=1214051"
+     :locked true
+     :label {:text "Fiskepiren"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1214051'>"}
+    :id "1214051"
+    :geometry {:type "Point", :coordinates [5.739854 58.971916]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/0329007_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=329272"
+     :locked true
+     :label {:text "Fiskvollbukta"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=329272'>"}
+    :id "329272"
+    :geometry {:type "Point", :coordinates [10.775894 59.84214]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Fjærekilen"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=110580"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110580'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "110580"
+    :geometry {:type "Point", :coordinates [9.540253 59.18545]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Fokserød"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=111712"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=111712'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "111712"
+    :geometry {:type "Point", :coordinates [10.208213 59.183083]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1129024_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=178258"
+     :locked true
+     :label {:text "Forus 1"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=178258'>"}
+    :id "178258"
+    :geometry {:type "Point", :coordinates [5.718393 58.884556]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1129024_2/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=280552"
+     :locked true
+     :label {:text "Forus 2"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=280552'>"}
+    :id "280552"
+    :geometry {:type "Point", :coordinates [5.718395 58.884556]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Forusbeen, mot Sandnes"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=161301"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=161301'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "161301"
+    :geometry {:type "Point", :coordinates [5.711781 58.894547]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Forusbeen, mot Stavanger"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=161086"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=161086'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "161086"
+    :geometry {:type "Point", :coordinates [5.711741 58.894653]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Furuset"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=513151"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=513151'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "513151"
+    :geometry {:type "Point", :coordinates [10.890513 59.9376]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Gautestad "}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=109800"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=109800'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "109800"
+    :geometry {:type "Point", :coordinates [11.302859 59.376114]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/0229005_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=659547"
+     :locked true
+     :label {:text "Gjelleråsen"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=659547'>"}
+    :id "659547"
+    :geometry {:type "Point", :coordinates [10.928709 59.986526]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/0729005_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=289642"
+     :locked true
+     :label {:text "Gravdal"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=289642'>"}
+    :id "289642"
+    :geometry {:type "Point", :coordinates [10.197373 59.30377]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Grønnliheia"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=1069329"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1069329'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "1069329"
+    :geometry {:type "Point", :coordinates [8.108081 59.531517]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Gulli nord"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=209649"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=209649'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "209649"
+    :geometry {:type "Point", :coordinates [10.37472 59.318283]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1029007_1/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=110611"
+     :locked true
+     :label {:text "Haddelandsheia"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110611'>"}
+    :id "110611"
+    :geometry {:type "Point", :coordinates [7.078181 58.504597]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Hamrebakkene"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=559854"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=559854'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "559854"
+    :geometry {:type "Point", :coordinates [6.581453 58.445244]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Hanekleiva"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=209309"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=209309'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "209309"
+    :geometry {:type "Point", :coordinates [10.181025 59.57334]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Harestad 1"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=627517"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=627517'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "627517"
+    :geometry {:type "Point", :coordinates [5.635306 59.012638]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :video "https://kamera.vegvesen.no/public/1129027_2/manifest.m3u8"
+     :symbol "marker_13"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}
+     :photo "http://webkamera.vegvesen.no/kamera?id=627515"
+     :locked true
+     :label {:text "Harestad 2"}
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=627515'>"}
+    :id "627515"
+    :geometry {:type "Point", :coordinates [5.636789 59.012756]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Haslestad"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=567756"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=567756'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "567756"
+    :geometry {:type "Point", :coordinates [8.841694 58.574017]}}
+   {:type "Feature"
+    :properties
+    {:tags []
+     :symbol "marker_13"
+     :label {:text "Haukelifjell"}
+     :locked true
+     :photo "http://webkamera.vegvesen.no/kamera?id=127264"
+     :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=127264'>"
+     :layerId "mr5bw:8c2f90e92f_167a2c29129"
+     :icon
+     {:iconUrl "/images/markers/marker_13.png"
+      :iconRetinaUrl "/images/markers@2x/marker_13.png"
+      :iconSize [40 40]
+      :iconAnchor [20 20]
+      :popupAnchor [0 -20]}}
+    :id "127264"
+    :geometry {:type "Point", :coordinates [7.088133 59.85024]}}
+   ...]
+  :properties {}})
+clj꞉checklist.web꞉> 
+#'checklist.web/speedy-json-map
+clj꞉checklist.web꞉> 
+; Execution error (ClassCastException) at checklist.web/eval12798 (form-init8739668780468483625.clj:27).
+; class clojure.lang.LazySeq cannot be cast to class clojure.lang.IPersistentMap (clojure.lang.LazySeq and clojure.lang.IPersistentMap are in unnamed module of loader 'app')
+clj꞉checklist.web꞉> 
+; Syntax error reading source at (REPL:27:56).
+; Invalid number: 604a28e1bd01373dd82aa303
+clj꞉checklist.web꞉> 
+; Execution error (ClassCastException) at monger.collection/find-one (collection.clj:176).
+; class java.lang.String cannot be cast to class com.mongodb.DBObject (java.lang.String is in module java.base of loader 'bootstrap'; com.mongodb.DBObject is in unnamed module of loader 'app')
+clj꞉checklist.web꞉> 
+; Execution error (IllegalArgumentException) at checklist.web/eval12802 (form-init8739668780468483625.clj:27).
+; No matching field found: ObjectId for class java.lang.String
+clj꞉checklist.web꞉> 
+nil
+clj꞉checklist.web꞉> 
+#'checklist.web/speedy-json-map
+clj꞉checklist.web꞉> 
+nil
+clj꞉checklist.web꞉> 
+; Syntax error compiling at (c:\Users\Georg H. Ekeberg\TelePlan Nora\checklist\src\checklist\web.clj:27:1).
+; No such var: mc/find-map
+clj꞉checklist.web꞉> 
+{:_id #object[org.bson.types.ObjectId 0x7cd2b7ce "604a28e1bd01373dd82aa303"]
+ :type "FeatureCollection"
+ :features
+ [{:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/0329002_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=297634"
+    :locked true
+    :label {:text "Aker sykehus"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=297634'>"}
+   :id "297634"
+   :geometry {:type "Point", :coordinates [10.798009 59.941025]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Aksdal"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=186425"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=186425'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "186425"
+   :geometry {:type "Point", :coordinates [5.448602 59.418026]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Alsåkernes"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=110730"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110730'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "110730"
+   :geometry {:type "Point", :coordinates [6.078816 59.76755]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Ambjørndalen"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=127268"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=127268'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "127268"
+   :geometry {:type "Point", :coordinates [8.586191 59.587364]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1129037_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=1000402"
+    :locked true
+    :label {:text "Arsvågen ferjekai 1"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1000402'>"}
+   :id "1000402"
+   :geometry {:type "Point", :coordinates [5.450075 59.171135]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1129037_2/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=1000404"
+    :locked true
+    :label {:text "Arsvågen ferjekai 2"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1000404'>"}
+   :id "1000404"
+   :geometry {:type "Point", :coordinates [5.45023 59.170853]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/0229032_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=387688"
+    :locked true
+    :label {:text "Asker"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=387688'>"}
+   :id "387688"
+   :geometry {:type "Point", :coordinates [10.43968 59.832977]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/0729001_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=592092"
+    :locked true
+    :label {:text "Berg kirke"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=592092'>"}
+   :id "592092"
+   :geometry {:type "Point", :coordinates [9.923152 58.99282]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/0729015_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=576514"
+    :locked true
+    :label {:text "Bogen"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=576514'>"}
+   :id "576514"
+   :geometry {:type "Point", :coordinates [10.264292 59.53098]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Bremnes"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=197154"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=197154'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "197154"
+   :geometry {:type "Point", :coordinates [5.186835 59.797047]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Brumyrdal"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=110597"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110597'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "110597"
+   :geometry {:type "Point", :coordinates [9.507642 59.12548]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Brunkeberg"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=127262"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=127262'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "127262"
+   :geometry {:type "Point", :coordinates [8.503613 59.442493]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Budal"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=1069256"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1069256'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "1069256"
+   :geometry {:type "Point", :coordinates [10.384978 59.125206]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Buekrossen 1"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=214243"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=214243'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "214243"
+   :geometry {:type "Point", :coordinates [5.987441 58.66651]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Buekrossen 2"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=110737"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110737'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "110737"
+   :geometry {:type "Point", :coordinates [5.987442 58.66651]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Byrkja"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=581055"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=581055'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "581055"
+   :geometry {:type "Point", :coordinates [6.146584 59.186398]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1229028_2/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=746237"
+    :locked true
+    :label {:text "Bømlabrua 1"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=746237'>"}
+   :id "746237"
+   :geometry {:type "Point", :coordinates [5.380622 59.737354]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Bømlabrua 2"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=745104"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=745104'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "745104"
+   :geometry {:type "Point", :coordinates [5.377826 59.73717]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Dalehefte"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=458596"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=458596'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "458596"
+   :geometry {:type "Point", :coordinates [7.81254 58.308594]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Darbu"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=1107725"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1107725'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "1107725"
+   :geometry {:type "Point", :coordinates [9.777227 59.70239]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Dirdal"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=320854"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=320854'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "320854"
+   :geometry {:type "Point", :coordinates [6.243109 58.80774]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/0229018_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=804808"
+    :locked true
+    :label {:text "Djupdalen"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=804808'>"}
+   :id "804808"
+   :geometry {:type "Point", :coordinates [10.974694 59.96223]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Drangsdalen"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=112521"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=112521'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "112521"
+   :geometry {:type "Point", :coordinates [6.406439 58.47262]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Eiane"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=559813"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=559813'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "559813"
+   :geometry {:type "Point", :coordinates [6.292859 59.29422]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Eikje"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=186437"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=186437'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "186437"
+   :geometry {:type "Point", :coordinates [5.48923 59.2955]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Farsjø"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=110583"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110583'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "110583"
+   :geometry {:type "Point", :coordinates [9.332315 58.939854]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1129015_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=285084"
+    :locked true
+    :label {:text "Ferkingstad"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=285084'>"}
+   :id "285084"
+   :geometry {:type "Point", :coordinates [5.183687 59.189487]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Fidjane"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=458586"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=458586'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "458586"
+   :geometry {:type "Point", :coordinates [7.939789 58.14116]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1129003_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=444672"
+    :locked true
+    :label {:text "Finnestad"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=444672'>"}
+   :id "444672"
+   :geometry {:type "Point", :coordinates [5.654466 58.990803]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1129038_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=1214051"
+    :locked true
+    :label {:text "Fiskepiren"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1214051'>"}
+   :id "1214051"
+   :geometry {:type "Point", :coordinates [5.739854 58.971916]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/0329007_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=329272"
+    :locked true
+    :label {:text "Fiskvollbukta"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=329272'>"}
+   :id "329272"
+   :geometry {:type "Point", :coordinates [10.775894 59.84214]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Fjærekilen"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=110580"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110580'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "110580"
+   :geometry {:type "Point", :coordinates [9.540253 59.18545]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Fokserød"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=111712"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=111712'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "111712"
+   :geometry {:type "Point", :coordinates [10.208213 59.183083]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1129024_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=178258"
+    :locked true
+    :label {:text "Forus 1"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=178258'>"}
+   :id "178258"
+   :geometry {:type "Point", :coordinates [5.718393 58.884556]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1129024_2/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=280552"
+    :locked true
+    :label {:text "Forus 2"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=280552'>"}
+   :id "280552"
+   :geometry {:type "Point", :coordinates [5.718395 58.884556]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Forusbeen, mot Sandnes"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=161301"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=161301'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "161301"
+   :geometry {:type "Point", :coordinates [5.711781 58.894547]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Forusbeen, mot Stavanger"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=161086"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=161086'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "161086"
+   :geometry {:type "Point", :coordinates [5.711741 58.894653]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Furuset"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=513151"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=513151'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "513151"
+   :geometry {:type "Point", :coordinates [10.890513 59.9376]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Gautestad "}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=109800"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=109800'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "109800"
+   :geometry {:type "Point", :coordinates [11.302859 59.376114]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/0229005_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=659547"
+    :locked true
+    :label {:text "Gjelleråsen"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=659547'>"}
+   :id "659547"
+   :geometry {:type "Point", :coordinates [10.928709 59.986526]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/0729005_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=289642"
+    :locked true
+    :label {:text "Gravdal"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=289642'>"}
+   :id "289642"
+   :geometry {:type "Point", :coordinates [10.197373 59.30377]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Grønnliheia"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=1069329"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1069329'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "1069329"
+   :geometry {:type "Point", :coordinates [8.108081 59.531517]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Gulli nord"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=209649"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=209649'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "209649"
+   :geometry {:type "Point", :coordinates [10.37472 59.318283]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1029007_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=110611"
+    :locked true
+    :label {:text "Haddelandsheia"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110611'>"}
+   :id "110611"
+   :geometry {:type "Point", :coordinates [7.078181 58.504597]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Hamrebakkene"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=559854"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=559854'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "559854"
+   :geometry {:type "Point", :coordinates [6.581453 58.445244]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Hanekleiva"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=209309"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=209309'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "209309"
+   :geometry {:type "Point", :coordinates [10.181025 59.57334]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Harestad 1"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=627517"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=627517'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "627517"
+   :geometry {:type "Point", :coordinates [5.635306 59.012638]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1129027_2/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=627515"
+    :locked true
+    :label {:text "Harestad 2"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=627515'>"}
+   :id "627515"
+   :geometry {:type "Point", :coordinates [5.636789 59.012756]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Haslestad"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=567756"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=567756'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "567756"
+   :geometry {:type "Point", :coordinates [8.841694 58.574017]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Haukelifjell"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=127264"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=127264'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "127264"
+   :geometry {:type "Point", :coordinates [7.088133 59.85024]}}
+  ...]
+ :properties {}}
+clj꞉checklist.web꞉> 
+#'checklist.web/speedy-json-map
+clj꞉checklist.web꞉> 
+; Evaluating file: web.clj
+; Execution error (BindException) at sun.nio.ch.Net/bind0 (Net.java:-2).
+; Address already in use: bind
+; Evaluation of file web.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉checklist.web꞉> 
+clj꞉checklist.web꞉> 
+; Evaluating file: web.clj
+#'checklist.web/server
+clj꞉checklist.web꞉> 
+{:type "FeatureCollection"
+ :features
+ [{:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/0329002_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=297634"
+    :locked true
+    :label {:text "Aker sykehus"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=297634'>"}
+   :id "297634"
+   :geometry {:type "Point", :coordinates [10.798009 59.941025]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Aksdal"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=186425"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=186425'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "186425"
+   :geometry {:type "Point", :coordinates [5.448602 59.418026]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Alsåkernes"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=110730"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110730'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "110730"
+   :geometry {:type "Point", :coordinates [6.078816 59.76755]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Ambjørndalen"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=127268"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=127268'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "127268"
+   :geometry {:type "Point", :coordinates [8.586191 59.587364]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1129037_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=1000402"
+    :locked true
+    :label {:text "Arsvågen ferjekai 1"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1000402'>"}
+   :id "1000402"
+   :geometry {:type "Point", :coordinates [5.450075 59.171135]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1129037_2/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=1000404"
+    :locked true
+    :label {:text "Arsvågen ferjekai 2"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1000404'>"}
+   :id "1000404"
+   :geometry {:type "Point", :coordinates [5.45023 59.170853]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/0229032_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=387688"
+    :locked true
+    :label {:text "Asker"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=387688'>"}
+   :id "387688"
+   :geometry {:type "Point", :coordinates [10.43968 59.832977]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/0729001_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=592092"
+    :locked true
+    :label {:text "Berg kirke"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=592092'>"}
+   :id "592092"
+   :geometry {:type "Point", :coordinates [9.923152 58.99282]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/0729015_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=576514"
+    :locked true
+    :label {:text "Bogen"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=576514'>"}
+   :id "576514"
+   :geometry {:type "Point", :coordinates [10.264292 59.53098]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Bremnes"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=197154"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=197154'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "197154"
+   :geometry {:type "Point", :coordinates [5.186835 59.797047]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Brumyrdal"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=110597"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110597'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "110597"
+   :geometry {:type "Point", :coordinates [9.507642 59.12548]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Brunkeberg"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=127262"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=127262'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "127262"
+   :geometry {:type "Point", :coordinates [8.503613 59.442493]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Budal"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=1069256"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1069256'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "1069256"
+   :geometry {:type "Point", :coordinates [10.384978 59.125206]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Buekrossen 1"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=214243"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=214243'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "214243"
+   :geometry {:type "Point", :coordinates [5.987441 58.66651]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Buekrossen 2"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=110737"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110737'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "110737"
+   :geometry {:type "Point", :coordinates [5.987442 58.66651]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Byrkja"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=581055"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=581055'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "581055"
+   :geometry {:type "Point", :coordinates [6.146584 59.186398]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1229028_2/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=746237"
+    :locked true
+    :label {:text "Bømlabrua 1"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=746237'>"}
+   :id "746237"
+   :geometry {:type "Point", :coordinates [5.380622 59.737354]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Bømlabrua 2"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=745104"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=745104'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "745104"
+   :geometry {:type "Point", :coordinates [5.377826 59.73717]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Dalehefte"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=458596"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=458596'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "458596"
+   :geometry {:type "Point", :coordinates [7.81254 58.308594]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Darbu"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=1107725"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1107725'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "1107725"
+   :geometry {:type "Point", :coordinates [9.777227 59.70239]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Dirdal"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=320854"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=320854'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "320854"
+   :geometry {:type "Point", :coordinates [6.243109 58.80774]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/0229018_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=804808"
+    :locked true
+    :label {:text "Djupdalen"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=804808'>"}
+   :id "804808"
+   :geometry {:type "Point", :coordinates [10.974694 59.96223]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Drangsdalen"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=112521"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=112521'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "112521"
+   :geometry {:type "Point", :coordinates [6.406439 58.47262]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Eiane"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=559813"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=559813'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "559813"
+   :geometry {:type "Point", :coordinates [6.292859 59.29422]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Eikje"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=186437"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=186437'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "186437"
+   :geometry {:type "Point", :coordinates [5.48923 59.2955]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Farsjø"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=110583"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110583'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "110583"
+   :geometry {:type "Point", :coordinates [9.332315 58.939854]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1129015_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=285084"
+    :locked true
+    :label {:text "Ferkingstad"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=285084'>"}
+   :id "285084"
+   :geometry {:type "Point", :coordinates [5.183687 59.189487]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Fidjane"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=458586"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=458586'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "458586"
+   :geometry {:type "Point", :coordinates [7.939789 58.14116]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1129003_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=444672"
+    :locked true
+    :label {:text "Finnestad"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=444672'>"}
+   :id "444672"
+   :geometry {:type "Point", :coordinates [5.654466 58.990803]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1129038_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=1214051"
+    :locked true
+    :label {:text "Fiskepiren"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1214051'>"}
+   :id "1214051"
+   :geometry {:type "Point", :coordinates [5.739854 58.971916]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/0329007_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=329272"
+    :locked true
+    :label {:text "Fiskvollbukta"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=329272'>"}
+   :id "329272"
+   :geometry {:type "Point", :coordinates [10.775894 59.84214]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Fjærekilen"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=110580"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110580'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "110580"
+   :geometry {:type "Point", :coordinates [9.540253 59.18545]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Fokserød"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=111712"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=111712'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "111712"
+   :geometry {:type "Point", :coordinates [10.208213 59.183083]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1129024_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=178258"
+    :locked true
+    :label {:text "Forus 1"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=178258'>"}
+   :id "178258"
+   :geometry {:type "Point", :coordinates [5.718393 58.884556]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1129024_2/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=280552"
+    :locked true
+    :label {:text "Forus 2"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=280552'>"}
+   :id "280552"
+   :geometry {:type "Point", :coordinates [5.718395 58.884556]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Forusbeen, mot Sandnes"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=161301"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=161301'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "161301"
+   :geometry {:type "Point", :coordinates [5.711781 58.894547]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Forusbeen, mot Stavanger"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=161086"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=161086'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "161086"
+   :geometry {:type "Point", :coordinates [5.711741 58.894653]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Furuset"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=513151"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=513151'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "513151"
+   :geometry {:type "Point", :coordinates [10.890513 59.9376]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Gautestad "}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=109800"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=109800'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "109800"
+   :geometry {:type "Point", :coordinates [11.302859 59.376114]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/0229005_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=659547"
+    :locked true
+    :label {:text "Gjelleråsen"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=659547'>"}
+   :id "659547"
+   :geometry {:type "Point", :coordinates [10.928709 59.986526]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/0729005_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=289642"
+    :locked true
+    :label {:text "Gravdal"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=289642'>"}
+   :id "289642"
+   :geometry {:type "Point", :coordinates [10.197373 59.30377]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Grønnliheia"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=1069329"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=1069329'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "1069329"
+   :geometry {:type "Point", :coordinates [8.108081 59.531517]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Gulli nord"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=209649"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=209649'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "209649"
+   :geometry {:type "Point", :coordinates [10.37472 59.318283]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1029007_1/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=110611"
+    :locked true
+    :label {:text "Haddelandsheia"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=110611'>"}
+   :id "110611"
+   :geometry {:type "Point", :coordinates [7.078181 58.504597]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Hamrebakkene"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=559854"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=559854'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "559854"
+   :geometry {:type "Point", :coordinates [6.581453 58.445244]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Hanekleiva"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=209309"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=209309'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "209309"
+   :geometry {:type "Point", :coordinates [10.181025 59.57334]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Harestad 1"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=627517"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=627517'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "627517"
+   :geometry {:type "Point", :coordinates [5.635306 59.012638]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :video "https://kamera.vegvesen.no/public/1129027_2/manifest.m3u8"
+    :symbol "marker_13"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}
+    :photo "http://webkamera.vegvesen.no/kamera?id=627515"
+    :locked true
+    :label {:text "Harestad 2"}
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=627515'>"}
+   :id "627515"
+   :geometry {:type "Point", :coordinates [5.636789 59.012756]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Haslestad"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=567756"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=567756'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "567756"
+   :geometry {:type "Point", :coordinates [8.841694 58.574017]}}
+  {:type "Feature"
+   :properties
+   {:tags []
+    :symbol "marker_13"
+    :label {:text "Haukelifjell"}
+    :locked true
+    :photo "http://webkamera.vegvesen.no/kamera?id=127264"
+    :customPopup "<img width='300px' src='http://webkamera.vegvesen.no/kamera?id=127264'>"
+    :layerId "mr5bw:8c2f90e92f_167a2c29129"
+    :icon
+    {:iconUrl "/images/markers/marker_13.png"
+     :iconRetinaUrl "/images/markers@2x/marker_13.png"
+     :iconSize [40 40]
+     :iconAnchor [20 20]
+     :popupAnchor [0 -20]}}
+   :id "127264"
+   :geometry {:type "Point", :coordinates [7.088133 59.85024]}}
+  ...]
+ :properties {}}
+clj꞉checklist.web꞉> 
+#'checklist.web/json-map
+clj꞉checklist.web꞉> 
+#'checklist.web/serve-welcome
+clj꞉checklist.web꞉> 
+; nREPL Connection was closed

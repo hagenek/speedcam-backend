@@ -1,0 +1,6 @@
+{
+  "name": "Teleplan Globe backend for showing speedcameras",
+  "description": "App made for Teleplan Globe in recruitment process",
+  "image": "heroku/clojure",
+  "addons": [ "heroku-postgresql" ]
+}
