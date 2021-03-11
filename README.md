@@ -1,6 +1,8 @@
-# -started
+# Backend for speedcam location data in Norway
 
-A Checklist Clojure app, which can easily be deployed to Heroku.
+## Deployed at:
+
+https://quiet-wildwood-47347.herokuapp.com/
 
 ## Running Locally
 
