@@ -1,15 +1,14 @@
-
 # -started
 
 A Checklist Clojure app, which can easily be deployed to Heroku.
 
 ## Running Locally
 
-Make sure you have Clojure installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
+Make sure you have Clojure installed. Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
 
 ```sh
-$ git clone https://github.com/hagenek/checklist.git
-$ cd checklist
+$ git clone https://github.com/hagenek/speedcam-backend.git
+$ cd speedcam-backend
 $ lein repl
 user=> (require 'checklist.web)
 user=>(def server (checklist.web/-main))
@@ -32,5 +31,3 @@ or
 ## Documentation
 
 Routes:
-
-
