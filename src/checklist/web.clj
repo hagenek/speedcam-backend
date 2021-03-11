@@ -44,7 +44,7 @@
     (jetty/run-jetty (site #'handler) {:port port :join? false})))
 
 ;; For interactive development; 
-(.stop server)
+;; (.stop server)
 (def server (-main))
 
 
