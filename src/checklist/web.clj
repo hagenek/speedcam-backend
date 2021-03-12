@@ -21,13 +21,13 @@
 (def conn (:conn db-conn))
 (def db (:db db-conn))
 
-(def speedy-json-map (mc/find-one-as-map db "speedcameras"  {:_id (ObjectId. "604a28e1bd01373dd82aa303")}))
-(def json-map (dissoc speedy-json-map :_id))
+(def roadsidecam-clojure-map (mc/find-one-as-map db "speedcameras"  {:_id (ObjectId. "604a28e1bd01373dd82aa303")}))
+(def roadside-json-map (dissoc roadsidecam-json-map :_id))
 
 (defn serve-welcome []
   {:status 200
    :headers {"Content-Type" "application/json"}
-   :body (clojure.data.json/write-str json-map)})
+   :body (clojure.data.json/write-str roadside-json-map)})
 
 (defroutes app
   (GET "/" []
